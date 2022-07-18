@@ -1,0 +1,4 @@
+.bg-home-img {
+  background: url(../../../assets/images/home.jpg) no-repeat center;
+  background-size: cover;
+}
