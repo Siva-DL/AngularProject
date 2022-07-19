@@ -9,6 +9,7 @@ import { ContactComponent } from './routes/contact/contact.component';
 import { NotfoundComponent } from './routes/notfound/notfound.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './component/header/header.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HeaderComponent } from './component/header/header.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'home', component: HomeComponent },

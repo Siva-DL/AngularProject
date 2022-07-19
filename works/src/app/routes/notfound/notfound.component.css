@@ -1,0 +1,10 @@
+.bg-notfound-page {
+  background: url(../../../assets/images/not-found.jpg) no-repeat;
+  background-size: cover;
+}
+.custom-404 {
+  text-shadow: 3px 3px 3px red !important;
+}
+.text-404 {
+  text-shadow: 3px 3px 3px red !important;
+}

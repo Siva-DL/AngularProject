@@ -1,1 +1,43 @@
-<p>contact works!</p>
+<div class="container-fluid pt-5 bg-contact vh-100">
+    <div class="row justify-content-start align-items-center h-custom-65vh">
+        <div class="col-md-4 text-white p-5">
+            <form (ngSubmit)="submitForm(myForm)" #myForm="ngForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email"
+                        ngModel required ngPattern="">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" ngModel name="message" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class=" btn btn-primary w-100"> Send Message </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="row pt-5 text-white justify-content-start ps-5">
+
+        <div class=" col-md-3">
+            <h6> <i class="bi bi-phone-fill fs-1 text-primary"></i> </h6>
+            <p class="fs-5">
+                +1 112-22-333
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h6> <i class="bi bi-envelope-fill fs-1 text-primary"></i></h6>
+            <p class="fs-5">
+                Test123123131@asdhajksdas.com
+            </p>
+        </div>
+        <div class="col-md-3 ">
+            <h6> <i class="bi bi-geo-alt-fill fs-1 text-primary"></i></h6>
+            <p class="fs-5">
+                111 | Hyderabad | India
+            </p>
+        </div>
+    </div>
+</div>
