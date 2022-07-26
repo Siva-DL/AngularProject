@@ -9,7 +9,9 @@ import { ContactComponent } from './routes/contact/contact.component';
 import { NotfoundComponent } from './routes/notfound/notfound.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './component/header/header.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsComponent } from './forms/forms.component';
+import { TestrComponent } from './testr/testr.component';
 
 @NgModule({
   declarations: [
@@ -20,16 +22,21 @@ import { FormsModule } from '@angular/forms';
     ContactComponent,
     NotfoundComponent,
     HeaderComponent,
+    TestrComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'portfolio', component: PortfolioComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'forms', component: FormsComponent },
+      { path: 'reactive', component: TestrComponent },
+
       { path: '**', component: NotfoundComponent },
     ]),
   ],
