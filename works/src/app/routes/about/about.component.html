@@ -1,6 +1,17 @@
-<div class="container-fluid mt-5 pt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-4">
+<div class="container-fluid pt-5 justify-content-center">
+    <div class="row pt-2">
+        <div class="col-md-3 bg-dark vh-100">
+            <ul>
+                <li>
+                    <a class="nav-link" routerLink="/reactive">Reactive Form</a>
+                </li>
+            </ul>
+        </div>
+        <router-outlet></router-outlet>
+        <div class="col-md-6 p-5">
+            <!-- <div class="container-fluid mt-5 pt-5"> -->
+            <!-- <div class="row justify-content-center"> -->
+            <!-- <div class="col-md-4"> -->
             <form (ngSubmit)="validateForm(signUp)" #signUp="ngForm">
                 <div class="mb-3">
                     <label class="form-label" for="username">User Name</label>
@@ -32,6 +43,9 @@
 
                 <button type="submit" class="btn btn-primary" [disabled]="signUp.invalid">Submit</button>
             </form>
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
         </div>
     </div>
 </div>

@@ -1,1 +1,55 @@
-<p>portfolio works!</p>
+<div class="vh-100 bg-warning">
+    <p>portfolio works!</p>
+
+    <ng-container>
+        <div *ngIf="isTrue; else hideFalse">
+            <div>
+                <h2> Hello is True..!</h2>
+            </div>
+
+        </div>
+
+        <ng-template #hideFalse>
+            {{ 'hello' | uppercase}}
+            <h4> This is False Condition...!</h4>
+        </ng-template>
+    </ng-container>
+
+
+    <table class="table border border-1">
+        <tr>
+            <td>
+                somex
+            </td>
+            <td>
+                {{ 454 | grade: total : 2}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                somex
+            </td>
+            <td>
+                {{ 454 | grade : total : 3}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                somex
+            </td>
+            <td>
+                {{ 454 | grade : total : 1}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                somex
+            </td>
+            <td>
+                {{ 454 }}
+            </td>
+        </tr>
+    </table>
+
+    <ng-content></ng-content>
+</div>

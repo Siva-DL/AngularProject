@@ -12,6 +12,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormsComponent } from './forms/forms.component';
 import { TestrComponent } from './testr/testr.component';
+import { AttrDirective } from './attr.directive';
+import { GradePipe } from './grade.pipe';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { TestrComponent } from './testr/testr.component';
     NotfoundComponent,
     HeaderComponent,
     TestrComponent,
+    AttrDirective,
+    GradePipe,
   ],
   imports: [
     BrowserModule,

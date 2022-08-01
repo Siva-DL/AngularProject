@@ -14,14 +14,18 @@ export class TestrComponent implements OnInit {
   signUp = new FormGroup({
     user: new FormControl('', [
       Validators.required,
-      Validators.pattern('[a-zA-Z]+$]'),
+      Validators.pattern('[a-zA-Z]+$'),
     ]),
-    email: new FormControl(''),
-    password: new FormControl(''),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [
+      Validators.minLength(4),
+      Validators.required,
+    ]),
   });
 
   validateForm() {
     console.log(this.signUp.value);
+    localStorage.setItem('UserForm', JSON.stringify(this.signUp.value));
   }
 
   get email() {

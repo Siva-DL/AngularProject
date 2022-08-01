@@ -4,14 +4,14 @@
             <form (ngSubmit)="validateForm()" [formGroup]="signUp">
                 <div class="mb-3">
                     <label class="form-label" for="username">User Name</label>
-                    <input type="text" class="form-control" id="username" name="username" formControlName="user" />
+                    <input type="text" class="form-control" id="username" formControlName="user" />
                     <span class="text-danger form-text" *ngIf="user && user.invalid && user.touched"><i
                             class="bi bi-exclamation-triangle-fill"></i> Please enter a Valid Name!
                     </span>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" name="email" required
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="email"
                         formControlName="email">
                     <div id="emailHelp" class="form-text text-danger" *ngIf="email && email.invalid && email.touched"><i
                             class="bi bi-exclamation-triangle-fill"></i> Please Enter a valid Email
@@ -19,8 +19,8 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" name="password" required
-                        formControlName="password" minlength="4">
+                    <input type="password" class="form-control" id="exampleInputPassword1" name="password"
+                        formControlName="password">
                     <span *ngIf="password && password.invalid && password.touched" class="text-danger form-text"> <i
                             class="bi bi-exclamation-triangle-fill"></i> Please Enter Min
                         of 4
@@ -32,3 +32,4 @@
         </div>
     </div>
 </div>
+<a class="nav-link" routerLink="/about">About</a>
