@@ -7,6 +7,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./testr.component.css'],
 })
 export class TestrComponent implements OnInit {
+  isTrue: boolean = true;
   constructor() {}
 
   ngOnInit(): void {}

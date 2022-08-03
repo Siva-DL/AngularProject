@@ -14,6 +14,7 @@ import { FormsComponent } from './forms/forms.component';
 import { TestrComponent } from './testr/testr.component';
 import { AttrDirective } from './attr.directive';
 import { GradePipe } from './grade.pipe';
+import { StrdirDirective } from './strdir.directive';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { GradePipe } from './grade.pipe';
     TestrComponent,
     AttrDirective,
     GradePipe,
+    StrdirDirective,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { GradePipe } from './grade.pipe';
       { path: 'contact', component: ContactComponent },
       { path: 'forms', component: FormsComponent },
       { path: 'reactive', component: TestrComponent },
+      { path: 'about:reactive', component: TestrComponent },
 
       { path: '**', component: NotfoundComponent },
     ]),
